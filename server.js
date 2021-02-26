@@ -8,7 +8,7 @@ server.use(express.static('public'))
 server.set("view engine", "html")
 
 nunjucks.configure("views", {
-  express:server
+  express: server
 })
 
 server.get("/", function(req, res) {
